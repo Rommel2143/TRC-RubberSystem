@@ -79,7 +79,7 @@ Partial Class sub_mainframe
         Me.StockMonitoringToolStripMenuItem.Image = CType(resources.GetObject("StockMonitoringToolStripMenuItem.Image"), System.Drawing.Image)
         Me.StockMonitoringToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.StockMonitoringToolStripMenuItem.Name = "StockMonitoringToolStripMenuItem"
-        Me.StockMonitoringToolStripMenuItem.Size = New System.Drawing.Size(151, 38)
+        Me.StockMonitoringToolStripMenuItem.Size = New System.Drawing.Size(196, 38)
         Me.StockMonitoringToolStripMenuItem.Text = "FG Stock"
         '
         'INToolStripMenuItem
@@ -87,7 +87,7 @@ Partial Class sub_mainframe
         Me.INToolStripMenuItem.Image = CType(resources.GetObject("INToolStripMenuItem.Image"), System.Drawing.Image)
         Me.INToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.INToolStripMenuItem.Name = "INToolStripMenuItem"
-        Me.INToolStripMenuItem.Size = New System.Drawing.Size(151, 38)
+        Me.INToolStripMenuItem.Size = New System.Drawing.Size(196, 38)
         Me.INToolStripMenuItem.Text = "IN"
         '
         'OUTToolStripMenuItem
@@ -95,7 +95,7 @@ Partial Class sub_mainframe
         Me.OUTToolStripMenuItem.Image = CType(resources.GetObject("OUTToolStripMenuItem.Image"), System.Drawing.Image)
         Me.OUTToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.OUTToolStripMenuItem.Name = "OUTToolStripMenuItem"
-        Me.OUTToolStripMenuItem.Size = New System.Drawing.Size(151, 38)
+        Me.OUTToolStripMenuItem.Size = New System.Drawing.Size(196, 38)
         Me.OUTToolStripMenuItem.Text = "OUT"
         '
         'RETURNToolStripMenuItem
@@ -103,7 +103,7 @@ Partial Class sub_mainframe
         Me.RETURNToolStripMenuItem.Image = CType(resources.GetObject("RETURNToolStripMenuItem.Image"), System.Drawing.Image)
         Me.RETURNToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.RETURNToolStripMenuItem.Name = "RETURNToolStripMenuItem"
-        Me.RETURNToolStripMenuItem.Size = New System.Drawing.Size(151, 38)
+        Me.RETURNToolStripMenuItem.Size = New System.Drawing.Size(196, 38)
         Me.RETURNToolStripMenuItem.Text = "RETURN"
         '
         'tool_manage
@@ -123,7 +123,7 @@ Partial Class sub_mainframe
         Me.AddItemToolStripMenuItem.Image = CType(resources.GetObject("AddItemToolStripMenuItem.Image"), System.Drawing.Image)
         Me.AddItemToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.AddItemToolStripMenuItem.Name = "AddItemToolStripMenuItem"
-        Me.AddItemToolStripMenuItem.Size = New System.Drawing.Size(157, 38)
+        Me.AddItemToolStripMenuItem.Size = New System.Drawing.Size(196, 38)
         Me.AddItemToolStripMenuItem.Text = "Add Item"
         '
         'userstrip
@@ -214,9 +214,9 @@ Partial Class sub_mainframe
         Me.lbl_tittle.ForeColor = System.Drawing.Color.White
         Me.lbl_tittle.Location = New System.Drawing.Point(27, 5)
         Me.lbl_tittle.Name = "lbl_tittle"
-        Me.lbl_tittle.Size = New System.Drawing.Size(106, 17)
+        Me.lbl_tittle.Size = New System.Drawing.Size(100, 17)
         Me.lbl_tittle.TabIndex = 0
-        Me.lbl_tittle.Text = "Painting System"
+        Me.lbl_tittle.Text = "Rubber System"
         '
         'Guna2GradientPanel1
         '

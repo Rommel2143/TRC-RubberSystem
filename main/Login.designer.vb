@@ -185,9 +185,9 @@ Partial Class Login
         Me.Label2.ForeColor = System.Drawing.SystemColors.HotTrack
         Me.Label2.Location = New System.Drawing.Point(287, 89)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(149, 25)
+        Me.Label2.Size = New System.Drawing.Size(142, 25)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Painting System"
+        Me.Label2.Text = "Rubber Section"
         '
         'Label1
         '
