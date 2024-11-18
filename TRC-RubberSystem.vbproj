@@ -342,6 +342,12 @@
       <DependentUpon>rubber_report.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Scan\parts_traceability.designer.vb">
+      <DependentUpon>parts_traceability.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Scan\parts_traceability.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Scan\FG_stock.designer.vb">
       <DependentUpon>FG_stock.vb</DependentUpon>
     </Compile>
@@ -433,6 +439,9 @@
     <EmbeddedResource Include="printing\rubber_report.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rubber_report.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scan\parts_traceability.resx">
+      <DependentUpon>parts_traceability.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Scan\FG_stock.resx">
       <DependentUpon>FG_stock.vb</DependentUpon>
