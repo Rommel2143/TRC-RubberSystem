@@ -49,7 +49,7 @@ Public Class parts_traceability
                 Return True
 
             Else
-                showerror("No Qrtype Detected! Please Register first")
+                ' showerror("No Qrtype Detected! Please Register first")
                 txtqr.Clear()
                 txtqr.Focus()
                 Return False
@@ -66,8 +66,8 @@ Public Class parts_traceability
         'Filter Duplicate on QR
         For Each row As DataGridViewRow In datagrid.Rows
             If row.Cells(0).Value IsNot Nothing AndAlso row.Cells(0).Value.ToString() = serialNumber Then
-                labelerror.Visible = True
-                texterror.Text = "QR Already Scanned Please check the Table!"
+                '  labelerror.Visible = True
+                '  texterror.Text = "QR Already Scanned Please check the Table!"
                 soundduplicate()
                 Exit Sub
             End If
@@ -79,8 +79,8 @@ Public Class parts_traceability
             Dim firstCustomerno As String = datagrid.Rows(0).Cells(3).Value.ToString()
 
             If partno <> firstPartno OrElse customerno <> firstCustomerno Then
-                labelerror.Visible = True
-                texterror.Text = "Part Number or Customer Number does not match. Please check the Table!"
+                '   labelerror.Visible = True
+                '  texterror.Text = "Part Number or Customer Number does not match. Please check the Table!"
                 soundduplicate()
                 Exit Sub
             End If
@@ -88,7 +88,7 @@ Public Class parts_traceability
         'display grid
         Dim newrow As String() = New String() {serialNumber, partno, qty, customerno, color, prod, shift, process, line, series}
         datagrid.Rows.Add(newrow)
-        labelerror.Visible = False
+        '  labelerror.Visible = False
         UpdateRowCountAndTotalQty(datagrid, lbl_count, lbl_qty)
     End Sub
 
@@ -130,7 +130,7 @@ Public Class parts_traceability
                 dr = cmdselect.ExecuteReader()
                 If dr.Read = True Then
                     'duplicate
-                    showduplicate(dr.GetString("userin"), dr.GetDateTime("datein").ToString("yyy-MM-dd"))
+                    '   showduplicate(dr.GetString("userin"), dr.GetDateTime("datein").ToString("yyy-MM-dd"))
 
                 Else
 
@@ -188,7 +188,7 @@ Public Class parts_traceability
                 dr = cmdselect.ExecuteReader()
                 If dr.Read = True Then
                     'duplicate
-                    showduplicate(dr.GetString("userin"), dr.GetDateTime("datein").ToString("yyy-MM-dd"))
+                    '   showduplicate(dr.GetString("userin"), dr.GetDateTime("datein").ToString("yyy-MM-dd"))
 
                 Else
                     If processQRcode("DMTN", txtqr_fg) Then
@@ -198,7 +198,7 @@ Public Class parts_traceability
                         If partno_inner = partno Then
                             If lbl_qty.Text = qty Then
                                 saveqr()
-                                labelerror.Visible = False
+                                '   labelerror.Visible = False
                                 txtqr_fg.Clear()
                                 txtqr_fg.Enabled = False
                                 txtqr.Enabled = True
@@ -206,11 +206,11 @@ Public Class parts_traceability
                                 txtqr.Clear()
                                 txtqr.Focus()
                             Else
-                                showerror("QTY does'nt match the given Inner Tags!")
+                                '   showerror("QTY does'nt match the given Inner Tags!")
                             End If
 
                         Else
-                            showerror("QR does'nt match the given Inner Tags!")
+                            '  showerror("QR does'nt match the given Inner Tags!")
 
                         End If
                         End If
@@ -299,26 +299,7 @@ Public Class parts_traceability
 
     End Sub
 
-    Private Sub showduplicate(user As String, date1 As String)
-        Try
-            labelerror.Visible = True
-            texterror.Text = "QR Already Scanned by " & user & " on " & date1 & ""
-            soundduplicate()
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-        End Try
-    End Sub
 
-    Public Sub showerror(text As String)
-
-        Try
-            labelerror.Visible = True
-            texterror.Text = text
-            sounderror()
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-        End Try
-    End Sub
 
     Private Sub btndelete_Click(sender As Object, e As EventArgs) Handles btndelete.Click
         datagrid1.Rows.Clear()

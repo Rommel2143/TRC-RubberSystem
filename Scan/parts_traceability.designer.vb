@@ -65,7 +65,6 @@ Partial Class parts_traceability
         Me.Guna2Shapes4 = New Guna.UI2.WinForms.Guna2Shapes()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2ShadowPanel1 = New Guna.UI2.WinForms.Guna2ShadowPanel()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Guna2Separator5 = New Guna.UI2.WinForms.Guna2Separator()
         Me.Guna2Separator1 = New Guna.UI2.WinForms.Guna2Separator()
         Me.Guna2Separator3 = New Guna.UI2.WinForms.Guna2Separator()
@@ -569,7 +568,6 @@ Partial Class parts_traceability
         'Guna2ShadowPanel1
         '
         Me.Guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ShadowPanel1.Controls.Add(Me.Label5)
         Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2Separator5)
         Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2Separator1)
         Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2Separator3)
@@ -580,18 +578,6 @@ Partial Class parts_traceability
         Me.Guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black
         Me.Guna2ShadowPanel1.Size = New System.Drawing.Size(184, 104)
         Me.Guna2ShadowPanel1.TabIndex = 241
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.White
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 5.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label5.Location = New System.Drawing.Point(12, 15)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(129, 7)
-        Me.Label5.TabIndex = 239
-        Me.Label5.Text = "DENSO PHILIPPINES CORPORATION"
         '
         'Guna2Separator5
         '
@@ -750,7 +736,6 @@ Partial Class parts_traceability
         Me.Guna2GroupBox1.PerformLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2ShadowPanel1.ResumeLayout(False)
-        Me.Guna2ShadowPanel1.PerformLayout()
         CType(Me.datagrid2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -791,7 +776,6 @@ Partial Class parts_traceability
     Friend WithEvents Guna2Shapes9 As Guna.UI2.WinForms.Guna2Shapes
     Friend WithEvents Guna2Shapes1 As Guna.UI2.WinForms.Guna2Shapes
     Friend WithEvents Guna2ShadowPanel1 As Guna.UI2.WinForms.Guna2ShadowPanel
-    Friend WithEvents Label5 As Label
     Friend WithEvents Guna2Separator5 As Guna.UI2.WinForms.Guna2Separator
     Friend WithEvents Guna2Separator1 As Guna.UI2.WinForms.Guna2Separator
     Friend WithEvents Guna2Separator3 As Guna.UI2.WinForms.Guna2Separator
