@@ -121,6 +121,9 @@
     <Reference Include="K4os.Hash.xxHash, Version=1.0.8.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
       <HintPath>packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.dll</HintPath>
     </Reference>
+    <Reference Include="log4net, Version=3.0.4.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>packages\log4net.3.0.4\lib\net462\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -330,6 +333,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="manage\print_boxQR.Designer.vb">
+      <DependentUpon>print_boxQR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="manage\print_boxQR.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="printing\print_report.Designer.vb">
       <DependentUpon>print_report.vb</DependentUpon>
     </Compile>
@@ -433,6 +442,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="manage\print_boxQR.resx">
+      <DependentUpon>print_boxQR.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="printing\print_report.resx">
       <DependentUpon>print_report.vb</DependentUpon>
     </EmbeddedResource>

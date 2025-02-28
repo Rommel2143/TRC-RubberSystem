@@ -41,6 +41,7 @@ Partial Class sub_mainframe
         Me.lbl_tittle = New System.Windows.Forms.Label()
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.PrintBoxQRToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.Guna2GradientPanel1.SuspendLayout()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -108,7 +109,7 @@ Partial Class sub_mainframe
         '
         'tool_manage
         '
-        Me.tool_manage.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddItemToolStripMenuItem})
+        Me.tool_manage.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddItemToolStripMenuItem, Me.PrintBoxQRToolStripMenuItem})
         Me.tool_manage.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.tool_manage.Image = CType(resources.GetObject("tool_manage.Image"), System.Drawing.Image)
         Me.tool_manage.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
@@ -123,7 +124,7 @@ Partial Class sub_mainframe
         Me.AddItemToolStripMenuItem.Image = CType(resources.GetObject("AddItemToolStripMenuItem.Image"), System.Drawing.Image)
         Me.AddItemToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.AddItemToolStripMenuItem.Name = "AddItemToolStripMenuItem"
-        Me.AddItemToolStripMenuItem.Size = New System.Drawing.Size(196, 38)
+        Me.AddItemToolStripMenuItem.Size = New System.Drawing.Size(157, 38)
         Me.AddItemToolStripMenuItem.Text = "Add Item"
         '
         'userstrip
@@ -245,6 +246,12 @@ Partial Class sub_mainframe
         Me.Guna2PictureBox1.TabIndex = 1
         Me.Guna2PictureBox1.TabStop = False
         '
+        'PrintBoxQRToolStripMenuItem
+        '
+        Me.PrintBoxQRToolStripMenuItem.Name = "PrintBoxQRToolStripMenuItem"
+        Me.PrintBoxQRToolStripMenuItem.Size = New System.Drawing.Size(196, 38)
+        Me.PrintBoxQRToolStripMenuItem.Text = "Print Box QR"
+        '
         'sub_mainframe
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -285,4 +292,5 @@ Partial Class sub_mainframe
     Friend WithEvents Guna2GradientPanel1 As Guna.UI2.WinForms.Guna2GradientPanel
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents RETURNToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PrintBoxQRToolStripMenuItem As ToolStripMenuItem
 End Class

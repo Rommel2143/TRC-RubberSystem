@@ -53,4 +53,8 @@ Public Class sub_mainframe
         pcname.ShowDialog()
 
     End Sub
+
+    Private Sub PrintBoxQRToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PrintBoxQRToolStripMenuItem.Click
+
+    End Sub
 End Class
