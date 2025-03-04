@@ -31,6 +31,7 @@ Partial Class sub_mainframe
         Me.RETURNToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.tool_manage = New System.Windows.Forms.ToolStripMenuItem()
         Me.AddItemToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PrintBoxQRToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.userstrip = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
         Me.UpdateSystemToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -41,7 +42,11 @@ Partial Class sub_mainframe
         Me.lbl_tittle = New System.Windows.Forms.Label()
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.PrintBoxQRToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BOXMONITORINGToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SCANBOXToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.INToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OUTToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MONITORINGToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.Guna2GradientPanel1.SuspendLayout()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -80,7 +85,7 @@ Partial Class sub_mainframe
         Me.StockMonitoringToolStripMenuItem.Image = CType(resources.GetObject("StockMonitoringToolStripMenuItem.Image"), System.Drawing.Image)
         Me.StockMonitoringToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.StockMonitoringToolStripMenuItem.Name = "StockMonitoringToolStripMenuItem"
-        Me.StockMonitoringToolStripMenuItem.Size = New System.Drawing.Size(196, 38)
+        Me.StockMonitoringToolStripMenuItem.Size = New System.Drawing.Size(151, 38)
         Me.StockMonitoringToolStripMenuItem.Text = "FG Stock"
         '
         'INToolStripMenuItem
@@ -88,7 +93,7 @@ Partial Class sub_mainframe
         Me.INToolStripMenuItem.Image = CType(resources.GetObject("INToolStripMenuItem.Image"), System.Drawing.Image)
         Me.INToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.INToolStripMenuItem.Name = "INToolStripMenuItem"
-        Me.INToolStripMenuItem.Size = New System.Drawing.Size(196, 38)
+        Me.INToolStripMenuItem.Size = New System.Drawing.Size(151, 38)
         Me.INToolStripMenuItem.Text = "IN"
         '
         'OUTToolStripMenuItem
@@ -96,7 +101,7 @@ Partial Class sub_mainframe
         Me.OUTToolStripMenuItem.Image = CType(resources.GetObject("OUTToolStripMenuItem.Image"), System.Drawing.Image)
         Me.OUTToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.OUTToolStripMenuItem.Name = "OUTToolStripMenuItem"
-        Me.OUTToolStripMenuItem.Size = New System.Drawing.Size(196, 38)
+        Me.OUTToolStripMenuItem.Size = New System.Drawing.Size(151, 38)
         Me.OUTToolStripMenuItem.Text = "OUT"
         '
         'RETURNToolStripMenuItem
@@ -104,7 +109,7 @@ Partial Class sub_mainframe
         Me.RETURNToolStripMenuItem.Image = CType(resources.GetObject("RETURNToolStripMenuItem.Image"), System.Drawing.Image)
         Me.RETURNToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.RETURNToolStripMenuItem.Name = "RETURNToolStripMenuItem"
-        Me.RETURNToolStripMenuItem.Size = New System.Drawing.Size(196, 38)
+        Me.RETURNToolStripMenuItem.Size = New System.Drawing.Size(151, 38)
         Me.RETURNToolStripMenuItem.Text = "RETURN"
         '
         'tool_manage
@@ -124,8 +129,14 @@ Partial Class sub_mainframe
         Me.AddItemToolStripMenuItem.Image = CType(resources.GetObject("AddItemToolStripMenuItem.Image"), System.Drawing.Image)
         Me.AddItemToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.AddItemToolStripMenuItem.Name = "AddItemToolStripMenuItem"
-        Me.AddItemToolStripMenuItem.Size = New System.Drawing.Size(157, 38)
+        Me.AddItemToolStripMenuItem.Size = New System.Drawing.Size(184, 38)
         Me.AddItemToolStripMenuItem.Text = "Add Item"
+        '
+        'PrintBoxQRToolStripMenuItem
+        '
+        Me.PrintBoxQRToolStripMenuItem.Name = "PrintBoxQRToolStripMenuItem"
+        Me.PrintBoxQRToolStripMenuItem.Size = New System.Drawing.Size(184, 38)
+        Me.PrintBoxQRToolStripMenuItem.Text = "Print Box QR"
         '
         'userstrip
         '
@@ -200,7 +211,7 @@ Partial Class sub_mainframe
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.ControlLight
         Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MasterlistToolStripMenuItem, Me.tool_manage, Me.userstrip})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MasterlistToolStripMenuItem, Me.tool_manage, Me.userstrip, Me.BOXMONITORINGToolStripMenuItem})
         Me.MenuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
@@ -246,11 +257,37 @@ Partial Class sub_mainframe
         Me.Guna2PictureBox1.TabIndex = 1
         Me.Guna2PictureBox1.TabStop = False
         '
-        'PrintBoxQRToolStripMenuItem
+        'BOXMONITORINGToolStripMenuItem
         '
-        Me.PrintBoxQRToolStripMenuItem.Name = "PrintBoxQRToolStripMenuItem"
-        Me.PrintBoxQRToolStripMenuItem.Size = New System.Drawing.Size(196, 38)
-        Me.PrintBoxQRToolStripMenuItem.Text = "Print Box QR"
+        Me.BOXMONITORINGToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SCANBOXToolStripMenuItem, Me.MONITORINGToolStripMenuItem})
+        Me.BOXMONITORINGToolStripMenuItem.Name = "BOXMONITORINGToolStripMenuItem"
+        Me.BOXMONITORINGToolStripMenuItem.Size = New System.Drawing.Size(154, 37)
+        Me.BOXMONITORINGToolStripMenuItem.Text = "BOX MONITORING"
+        '
+        'SCANBOXToolStripMenuItem
+        '
+        Me.SCANBOXToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.INToolStripMenuItem1, Me.OUTToolStripMenuItem1})
+        Me.SCANBOXToolStripMenuItem.Name = "SCANBOXToolStripMenuItem"
+        Me.SCANBOXToolStripMenuItem.Size = New System.Drawing.Size(180, 26)
+        Me.SCANBOXToolStripMenuItem.Text = "SCAN BOX"
+        '
+        'INToolStripMenuItem1
+        '
+        Me.INToolStripMenuItem1.Name = "INToolStripMenuItem1"
+        Me.INToolStripMenuItem1.Size = New System.Drawing.Size(180, 26)
+        Me.INToolStripMenuItem1.Text = "IN"
+        '
+        'OUTToolStripMenuItem1
+        '
+        Me.OUTToolStripMenuItem1.Name = "OUTToolStripMenuItem1"
+        Me.OUTToolStripMenuItem1.Size = New System.Drawing.Size(180, 26)
+        Me.OUTToolStripMenuItem1.Text = "OUT"
+        '
+        'MONITORINGToolStripMenuItem
+        '
+        Me.MONITORINGToolStripMenuItem.Name = "MONITORINGToolStripMenuItem"
+        Me.MONITORINGToolStripMenuItem.Size = New System.Drawing.Size(180, 26)
+        Me.MONITORINGToolStripMenuItem.Text = "MONITORING"
         '
         'sub_mainframe
         '
@@ -293,4 +330,9 @@ Partial Class sub_mainframe
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents RETURNToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PrintBoxQRToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BOXMONITORINGToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SCANBOXToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents INToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents OUTToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents MONITORINGToolStripMenuItem As ToolStripMenuItem
 End Class

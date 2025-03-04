@@ -55,6 +55,10 @@ Public Class sub_mainframe
     End Sub
 
     Private Sub PrintBoxQRToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PrintBoxQRToolStripMenuItem.Click
+        display_formscan(print_boxQR, "Print Box")
+    End Sub
 
+    Private Sub INToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles INToolStripMenuItem1.Click
+        display_formscan(BoxIN, "Box Recieving")
     End Sub
 End Class
