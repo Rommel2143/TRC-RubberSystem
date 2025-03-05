@@ -28,7 +28,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <UpdateUrl>\\ptif1-ds\SystemServer\Rubber System\</UpdateUrl>
-    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationRevision>8</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -333,6 +333,12 @@
     <Compile Include="Boxmonitoring\BoxIN.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Boxmonitoring\BoxOUT.Designer.vb">
+      <DependentUpon>BoxOUT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Boxmonitoring\BoxOUT.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Boxmonitoring\box_monitoring.Designer.vb">
       <DependentUpon>box_monitoring.vb</DependentUpon>
     </Compile>
@@ -345,6 +351,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="main\exportExcel.vb" />
     <Compile Include="manage\boxdataset.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -470,6 +477,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Boxmonitoring\BoxIN.resx">
       <DependentUpon>BoxIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boxmonitoring\BoxOUT.resx">
+      <DependentUpon>BoxOUT.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Boxmonitoring\box_monitoring.resx">
       <DependentUpon>box_monitoring.vb</DependentUpon>

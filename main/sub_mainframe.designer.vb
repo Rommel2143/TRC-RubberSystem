@@ -39,14 +39,14 @@ Partial Class sub_mainframe
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.lbl_tittle = New System.Windows.Forms.Label()
-        Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
-        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.BOXMONITORINGToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SCANBOXToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.INToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.OUTToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MONITORINGToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.lbl_tittle = New System.Windows.Forms.Label()
+        Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
+        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.MenuStrip1.SuspendLayout()
         Me.Guna2GradientPanel1.SuspendLayout()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -218,6 +218,41 @@ Partial Class sub_mainframe
         Me.MenuStrip1.Size = New System.Drawing.Size(1044, 41)
         Me.MenuStrip1.TabIndex = 13
         '
+        'BOXMONITORINGToolStripMenuItem
+        '
+        Me.BOXMONITORINGToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SCANBOXToolStripMenuItem, Me.MONITORINGToolStripMenuItem})
+        Me.BOXMONITORINGToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.BOXMONITORINGToolStripMenuItem.Image = CType(resources.GetObject("BOXMONITORINGToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.BOXMONITORINGToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.BOXMONITORINGToolStripMenuItem.Name = "BOXMONITORINGToolStripMenuItem"
+        Me.BOXMONITORINGToolStripMenuItem.Size = New System.Drawing.Size(161, 37)
+        Me.BOXMONITORINGToolStripMenuItem.Text = "Box Monitoring"
+        '
+        'SCANBOXToolStripMenuItem
+        '
+        Me.SCANBOXToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.INToolStripMenuItem1, Me.OUTToolStripMenuItem1})
+        Me.SCANBOXToolStripMenuItem.Name = "SCANBOXToolStripMenuItem"
+        Me.SCANBOXToolStripMenuItem.Size = New System.Drawing.Size(180, 26)
+        Me.SCANBOXToolStripMenuItem.Text = "SCAN BOX"
+        '
+        'INToolStripMenuItem1
+        '
+        Me.INToolStripMenuItem1.Name = "INToolStripMenuItem1"
+        Me.INToolStripMenuItem1.Size = New System.Drawing.Size(111, 26)
+        Me.INToolStripMenuItem1.Text = "IN"
+        '
+        'OUTToolStripMenuItem1
+        '
+        Me.OUTToolStripMenuItem1.Name = "OUTToolStripMenuItem1"
+        Me.OUTToolStripMenuItem1.Size = New System.Drawing.Size(111, 26)
+        Me.OUTToolStripMenuItem1.Text = "OUT"
+        '
+        'MONITORINGToolStripMenuItem
+        '
+        Me.MONITORINGToolStripMenuItem.Name = "MONITORINGToolStripMenuItem"
+        Me.MONITORINGToolStripMenuItem.Size = New System.Drawing.Size(180, 26)
+        Me.MONITORINGToolStripMenuItem.Text = "MONITORING"
+        '
         'lbl_tittle
         '
         Me.lbl_tittle.AutoSize = True
@@ -256,38 +291,6 @@ Partial Class sub_mainframe
         Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox1.TabIndex = 1
         Me.Guna2PictureBox1.TabStop = False
-        '
-        'BOXMONITORINGToolStripMenuItem
-        '
-        Me.BOXMONITORINGToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SCANBOXToolStripMenuItem, Me.MONITORINGToolStripMenuItem})
-        Me.BOXMONITORINGToolStripMenuItem.Name = "BOXMONITORINGToolStripMenuItem"
-        Me.BOXMONITORINGToolStripMenuItem.Size = New System.Drawing.Size(154, 37)
-        Me.BOXMONITORINGToolStripMenuItem.Text = "BOX MONITORING"
-        '
-        'SCANBOXToolStripMenuItem
-        '
-        Me.SCANBOXToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.INToolStripMenuItem1, Me.OUTToolStripMenuItem1})
-        Me.SCANBOXToolStripMenuItem.Name = "SCANBOXToolStripMenuItem"
-        Me.SCANBOXToolStripMenuItem.Size = New System.Drawing.Size(180, 26)
-        Me.SCANBOXToolStripMenuItem.Text = "SCAN BOX"
-        '
-        'INToolStripMenuItem1
-        '
-        Me.INToolStripMenuItem1.Name = "INToolStripMenuItem1"
-        Me.INToolStripMenuItem1.Size = New System.Drawing.Size(180, 26)
-        Me.INToolStripMenuItem1.Text = "IN"
-        '
-        'OUTToolStripMenuItem1
-        '
-        Me.OUTToolStripMenuItem1.Name = "OUTToolStripMenuItem1"
-        Me.OUTToolStripMenuItem1.Size = New System.Drawing.Size(180, 26)
-        Me.OUTToolStripMenuItem1.Text = "OUT"
-        '
-        'MONITORINGToolStripMenuItem
-        '
-        Me.MONITORINGToolStripMenuItem.Name = "MONITORINGToolStripMenuItem"
-        Me.MONITORINGToolStripMenuItem.Size = New System.Drawing.Size(180, 26)
-        Me.MONITORINGToolStripMenuItem.Text = "MONITORING"
         '
         'sub_mainframe
         '

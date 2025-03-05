@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class box_monitoring
+Partial Class BoxOUT
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,98 +22,41 @@ Partial Class box_monitoring
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(BoxOUT))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(box_monitoring))
-        Me.Guna2GroupBox2 = New Guna.UI2.WinForms.Guna2GroupBox()
-        Me.lbl_Tsmall = New System.Windows.Forms.Label()
-        Me.lbl_Tmedium = New System.Windows.Forms.Label()
-        Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
-        Me.lbl_Rbig = New System.Windows.Forms.Label()
-        Me.lbl_Rmedium = New System.Windows.Forms.Label()
-        Me.datagrid1 = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.txtqr = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.export_excel = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2GroupBox2.SuspendLayout()
-        Me.Guna2GroupBox1.SuspendLayout()
+        Me.datagrid1 = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.lbl_total = New System.Windows.Forms.Label()
+        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.datagrid1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Guna2GroupBox2
+        'txtqr
         '
-        Me.Guna2GroupBox2.Controls.Add(Me.lbl_Tsmall)
-        Me.Guna2GroupBox2.Controls.Add(Me.lbl_Tmedium)
-        Me.Guna2GroupBox2.CustomBorderColor = System.Drawing.Color.MidnightBlue
-        Me.Guna2GroupBox2.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2GroupBox2.ForeColor = System.Drawing.Color.White
-        Me.Guna2GroupBox2.Location = New System.Drawing.Point(435, 31)
-        Me.Guna2GroupBox2.Name = "Guna2GroupBox2"
-        Me.Guna2GroupBox2.Size = New System.Drawing.Size(340, 158)
-        Me.Guna2GroupBox2.TabIndex = 10
-        Me.Guna2GroupBox2.Text = "Tube Pump"
-        '
-        'lbl_Tsmall
-        '
-        Me.lbl_Tsmall.AutoSize = True
-        Me.lbl_Tsmall.BackColor = System.Drawing.Color.White
-        Me.lbl_Tsmall.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_Tsmall.ForeColor = System.Drawing.Color.DimGray
-        Me.lbl_Tsmall.Location = New System.Drawing.Point(16, 102)
-        Me.lbl_Tsmall.Name = "lbl_Tsmall"
-        Me.lbl_Tsmall.Size = New System.Drawing.Size(78, 21)
-        Me.lbl_Tsmall.TabIndex = 5
-        Me.lbl_Tsmall.Text = "Small Box"
-        '
-        'lbl_Tmedium
-        '
-        Me.lbl_Tmedium.AutoSize = True
-        Me.lbl_Tmedium.BackColor = System.Drawing.Color.White
-        Me.lbl_Tmedium.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_Tmedium.ForeColor = System.Drawing.Color.DimGray
-        Me.lbl_Tmedium.Location = New System.Drawing.Point(16, 66)
-        Me.lbl_Tmedium.Name = "lbl_Tmedium"
-        Me.lbl_Tmedium.Size = New System.Drawing.Size(97, 21)
-        Me.lbl_Tmedium.TabIndex = 6
-        Me.lbl_Tmedium.Text = "Medium Box"
-        '
-        'Guna2GroupBox1
-        '
-        Me.Guna2GroupBox1.Controls.Add(Me.lbl_Rbig)
-        Me.Guna2GroupBox1.Controls.Add(Me.lbl_Rmedium)
-        Me.Guna2GroupBox1.CustomBorderColor = System.Drawing.Color.MidnightBlue
-        Me.Guna2GroupBox1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2GroupBox1.ForeColor = System.Drawing.Color.White
-        Me.Guna2GroupBox1.Location = New System.Drawing.Point(45, 31)
-        Me.Guna2GroupBox1.Name = "Guna2GroupBox1"
-        Me.Guna2GroupBox1.Size = New System.Drawing.Size(340, 158)
-        Me.Guna2GroupBox1.TabIndex = 9
-        Me.Guna2GroupBox1.Text = "Rubber"
-        '
-        'lbl_Rbig
-        '
-        Me.lbl_Rbig.AutoSize = True
-        Me.lbl_Rbig.BackColor = System.Drawing.Color.White
-        Me.lbl_Rbig.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_Rbig.ForeColor = System.Drawing.Color.DimGray
-        Me.lbl_Rbig.Location = New System.Drawing.Point(16, 62)
-        Me.lbl_Rbig.Name = "lbl_Rbig"
-        Me.lbl_Rbig.Size = New System.Drawing.Size(61, 21)
-        Me.lbl_Rbig.TabIndex = 5
-        Me.lbl_Rbig.Text = "Big box"
-        '
-        'lbl_Rmedium
-        '
-        Me.lbl_Rmedium.AutoSize = True
-        Me.lbl_Rmedium.BackColor = System.Drawing.Color.White
-        Me.lbl_Rmedium.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_Rmedium.ForeColor = System.Drawing.Color.DimGray
-        Me.lbl_Rmedium.Location = New System.Drawing.Point(16, 102)
-        Me.lbl_Rmedium.Name = "lbl_Rmedium"
-        Me.lbl_Rmedium.Size = New System.Drawing.Size(97, 21)
-        Me.lbl_Rmedium.TabIndex = 6
-        Me.lbl_Rmedium.Text = "Medium Box"
+        Me.txtqr.BorderRadius = 3
+        Me.txtqr.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtqr.DefaultText = ""
+        Me.txtqr.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txtqr.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txtqr.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtqr.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtqr.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtqr.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtqr.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtqr.IconLeft = CType(resources.GetObject("txtqr.IconLeft"), System.Drawing.Image)
+        Me.txtqr.Location = New System.Drawing.Point(0, 41)
+        Me.txtqr.Name = "txtqr"
+        Me.txtqr.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtqr.PlaceholderText = "Scan Box QR..."
+        Me.txtqr.SelectedText = ""
+        Me.txtqr.Size = New System.Drawing.Size(200, 36)
+        Me.txtqr.TabIndex = 0
         '
         'datagrid1
         '
@@ -142,8 +85,9 @@ Partial Class box_monitoring
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.datagrid1.DefaultCellStyle = DataGridViewCellStyle3
+        Me.datagrid1.Dock = System.Windows.Forms.DockStyle.Left
         Me.datagrid1.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.datagrid1.Location = New System.Drawing.Point(45, 269)
+        Me.datagrid1.Location = New System.Drawing.Point(42, 111)
         Me.datagrid1.Name = "datagrid1"
         Me.datagrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -156,8 +100,8 @@ Partial Class box_monitoring
         Me.datagrid1.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.datagrid1.RowHeadersVisible = False
         Me.datagrid1.RowTemplate.Height = 30
-        Me.datagrid1.Size = New System.Drawing.Size(730, 326)
-        Me.datagrid1.TabIndex = 11
+        Me.datagrid1.Size = New System.Drawing.Size(405, 579)
+        Me.datagrid1.TabIndex = 4
         Me.datagrid1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.datagrid1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
         Me.datagrid1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
@@ -180,72 +124,71 @@ Partial Class box_monitoring
         Me.datagrid1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.datagrid1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         '
-        'txtqr
+        'Guna2Panel1
         '
-        Me.txtqr.BorderRadius = 3
-        Me.txtqr.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtqr.DefaultText = ""
-        Me.txtqr.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.txtqr.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.txtqr.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txtqr.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txtqr.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtqr.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.txtqr.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtqr.IconLeft = CType(resources.GetObject("txtqr.IconLeft"), System.Drawing.Image)
-        Me.txtqr.Location = New System.Drawing.Point(45, 230)
-        Me.txtqr.Name = "txtqr"
-        Me.txtqr.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtqr.PlaceholderText = "SCAN or INPUT Keywords..."
-        Me.txtqr.SelectedText = ""
-        Me.txtqr.Size = New System.Drawing.Size(200, 36)
-        Me.txtqr.TabIndex = 12
+        Me.Guna2Panel1.Controls.Add(Me.Label1)
+        Me.Guna2Panel1.Controls.Add(Me.lbl_total)
+        Me.Guna2Panel1.Controls.Add(Me.txtqr)
+        Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Guna2Panel1.Location = New System.Drawing.Point(42, 0)
+        Me.Guna2Panel1.Name = "Guna2Panel1"
+        Me.Guna2Panel1.Size = New System.Drawing.Size(975, 111)
+        Me.Guna2Panel1.TabIndex = 5
         '
-        'export_excel
+        'lbl_total
         '
-        Me.export_excel.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.export_excel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.export_excel.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.export_excel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.export_excel.FillColor = System.Drawing.Color.Transparent
-        Me.export_excel.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.export_excel.ForeColor = System.Drawing.Color.White
-        Me.export_excel.Image = CType(resources.GetObject("export_excel.Image"), System.Drawing.Image)
-        Me.export_excel.Location = New System.Drawing.Point(251, 230)
-        Me.export_excel.Name = "export_excel"
-        Me.export_excel.Size = New System.Drawing.Size(39, 36)
-        Me.export_excel.TabIndex = 13
+        Me.lbl_total.AutoSize = True
+        Me.lbl_total.BackColor = System.Drawing.Color.Transparent
+        Me.lbl_total.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_total.ForeColor = System.Drawing.Color.DimGray
+        Me.lbl_total.Location = New System.Drawing.Point(3, 87)
+        Me.lbl_total.Name = "lbl_total"
+        Me.lbl_total.Size = New System.Drawing.Size(28, 21)
+        Me.lbl_total.TabIndex = 6
+        Me.lbl_total.Text = "---"
         '
-        'box_monitoring
+        'Guna2Panel2
+        '
+        Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Guna2Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel2.Name = "Guna2Panel2"
+        Me.Guna2Panel2.Size = New System.Drawing.Size(42, 690)
+        Me.Guna2Panel2.TabIndex = 6
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label1.Location = New System.Drawing.Point(206, 23)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(124, 65)
+        Me.Label1.TabIndex = 8
+        Me.Label1.Text = "OUT"
+        '
+        'BoxOUT
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(942, 706)
-        Me.Controls.Add(Me.export_excel)
-        Me.Controls.Add(Me.txtqr)
+        Me.ClientSize = New System.Drawing.Size(1017, 690)
         Me.Controls.Add(Me.datagrid1)
-        Me.Controls.Add(Me.Guna2GroupBox2)
-        Me.Controls.Add(Me.Guna2GroupBox1)
+        Me.Controls.Add(Me.Guna2Panel1)
+        Me.Controls.Add(Me.Guna2Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "box_monitoring"
-        Me.Text = "box_monitoring"
+        Me.Name = "BoxOUT"
+        Me.Text = "BoxOUT"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.Guna2GroupBox2.ResumeLayout(False)
-        Me.Guna2GroupBox2.PerformLayout()
-        Me.Guna2GroupBox1.ResumeLayout(False)
-        Me.Guna2GroupBox1.PerformLayout()
         CType(Me.datagrid1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Guna2Panel1.ResumeLayout(False)
+        Me.Guna2Panel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Guna2GroupBox2 As Guna.UI2.WinForms.Guna2GroupBox
-    Friend WithEvents lbl_Tsmall As Label
-    Friend WithEvents lbl_Tmedium As Label
-    Friend WithEvents Guna2GroupBox1 As Guna.UI2.WinForms.Guna2GroupBox
-    Friend WithEvents lbl_Rbig As Label
-    Friend WithEvents lbl_Rmedium As Label
-    Friend WithEvents datagrid1 As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents txtqr As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents export_excel As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents datagrid1 As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents lbl_total As Label
+    Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Label1 As Label
 End Class

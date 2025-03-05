@@ -61,4 +61,12 @@ Public Class sub_mainframe
     Private Sub INToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles INToolStripMenuItem1.Click
         display_formscan(BoxIN, "Box Recieving")
     End Sub
+
+    Private Sub OUTToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles OUTToolStripMenuItem1.Click
+        display_formscan(BoxOUT, "Box Delivery")
+    End Sub
+
+    Private Sub MONITORINGToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MONITORINGToolStripMenuItem.Click
+        display_formscan(box_monitoring, "Box Monitoring")
+    End Sub
 End Class

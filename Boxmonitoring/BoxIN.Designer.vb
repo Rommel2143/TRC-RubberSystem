@@ -31,6 +31,8 @@ Partial Class BoxIN
         Me.datagrid1 = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.lbl_total = New System.Windows.Forms.Label()
+        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.datagrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -48,7 +50,7 @@ Partial Class BoxIN
         Me.txtqr.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtqr.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtqr.IconLeft = CType(resources.GetObject("txtqr.IconLeft"), System.Drawing.Image)
-        Me.txtqr.Location = New System.Drawing.Point(27, 33)
+        Me.txtqr.Location = New System.Drawing.Point(0, 41)
         Me.txtqr.Name = "txtqr"
         Me.txtqr.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtqr.PlaceholderText = "Scan Box QR..."
@@ -85,7 +87,7 @@ Partial Class BoxIN
         Me.datagrid1.DefaultCellStyle = DataGridViewCellStyle3
         Me.datagrid1.Dock = System.Windows.Forms.DockStyle.Left
         Me.datagrid1.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.datagrid1.Location = New System.Drawing.Point(0, 111)
+        Me.datagrid1.Location = New System.Drawing.Point(42, 111)
         Me.datagrid1.Name = "datagrid1"
         Me.datagrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -124,12 +126,13 @@ Partial Class BoxIN
         '
         'Guna2Panel1
         '
+        Me.Guna2Panel1.Controls.Add(Me.Label1)
         Me.Guna2Panel1.Controls.Add(Me.lbl_total)
         Me.Guna2Panel1.Controls.Add(Me.txtqr)
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel1.Location = New System.Drawing.Point(42, 0)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(1050, 111)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(1008, 111)
         Me.Guna2Panel1.TabIndex = 2
         '
         'lbl_total
@@ -138,11 +141,30 @@ Partial Class BoxIN
         Me.lbl_total.BackColor = System.Drawing.Color.Transparent
         Me.lbl_total.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_total.ForeColor = System.Drawing.Color.DimGray
-        Me.lbl_total.Location = New System.Drawing.Point(23, 90)
+        Me.lbl_total.Location = New System.Drawing.Point(3, 87)
         Me.lbl_total.Name = "lbl_total"
         Me.lbl_total.Size = New System.Drawing.Size(28, 21)
         Me.lbl_total.TabIndex = 6
         Me.lbl_total.Text = "---"
+        '
+        'Guna2Panel2
+        '
+        Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Guna2Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel2.Name = "Guna2Panel2"
+        Me.Guna2Panel2.Size = New System.Drawing.Size(42, 640)
+        Me.Guna2Panel2.TabIndex = 3
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label1.Location = New System.Drawing.Point(206, 24)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(79, 65)
+        Me.Label1.TabIndex = 7
+        Me.Label1.Text = "IN"
         '
         'BoxIN
         '
@@ -151,6 +173,7 @@ Partial Class BoxIN
         Me.ClientSize = New System.Drawing.Size(1050, 640)
         Me.Controls.Add(Me.datagrid1)
         Me.Controls.Add(Me.Guna2Panel1)
+        Me.Controls.Add(Me.Guna2Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "BoxIN"
         Me.Text = "n"
@@ -166,4 +189,6 @@ Partial Class BoxIN
     Friend WithEvents datagrid1 As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents lbl_total As Label
+    Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Label1 As Label
 End Class
