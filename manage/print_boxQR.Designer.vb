@@ -46,7 +46,7 @@ Partial Class print_boxQR
         Me.cmb_section.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.cmb_section.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.cmb_section.ItemHeight = 30
-        Me.cmb_section.Items.AddRange(New Object() {"R : Rubber", "T : Tubepump"})
+        Me.cmb_section.Items.AddRange(New Object() {"R : Rubber", "T : Tubepump", "M : Molding"})
         Me.cmb_section.Location = New System.Drawing.Point(42, 34)
         Me.cmb_section.Name = "cmb_section"
         Me.cmb_section.Size = New System.Drawing.Size(172, 36)
